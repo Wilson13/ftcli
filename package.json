@@ -6,7 +6,7 @@
   "bin": {
     "ftctl": "./bin/run"
   },
-  "bugs": "https://github.com/Wilson13/ftcli",
+  "bugs": "https://github.com/Wilson13/ftctl",
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.13.3",
@@ -35,7 +35,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/Wilson13/ftcli",
+  "homepage": "https://github.com/Wilson13/ftctl",
   "keywords": [
     "oclif"
   ],
