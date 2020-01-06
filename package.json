@@ -7,6 +7,10 @@
     "ftctl": "./bin/run"
   },
   "bugs": "https://github.com/Wilson13/ftcli",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Wilson13/ftcli"
+  },
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.13.3",
