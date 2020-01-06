@@ -19,7 +19,7 @@ $ npm install -g ftctl
 $ ftctl COMMAND
 running command...
 $ ftctl (-v|--version|version)
-ftctl/1.0.3 darwin-x64 node-v12.12.0
+ftctl/1.0.4 darwin-x64 node-v12.12.0
 $ ftctl --help [COMMAND]
 USAGE
   $ ftctl COMMAND
@@ -72,5 +72,5 @@ EXAMPLE
   App versioned '0.1.0-beta.1' build and releasing to staging initiated.
 ```
 
-_See code: [src/commands/release-stage.ts](https://github.com/wilson_13/ftctl/blob/v1.0.3/src/commands/release-stage.ts)_
+_See code: [src/commands/release-stage.ts](https://github.com/wilson_13/ftctl/blob/v1.0.4/src/commands/release-stage.ts)_
 <!-- commandsstop -->
