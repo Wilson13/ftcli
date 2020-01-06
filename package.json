@@ -2,11 +2,11 @@
   "name": "ftctl",
   "description": "CLI tool for minimal automation of Drone CD flow using Helm Chart type deployment.",
   "version": "1.0.2",
-  "author": "wilson_13",
+  "author": "Wilson13",
   "bin": {
     "ftctl": "./bin/run"
   },
-  "bugs": "https://github.com/wilson_13/ftctl/issues",
+  "bugs": "https://github.com/Wilson13/ftcli",
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.13.3",
@@ -35,7 +35,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/wilson_13/ftctl",
+  "homepage": "https://github.com/Wilson13/ftcli",
   "keywords": [
     "oclif"
   ],
