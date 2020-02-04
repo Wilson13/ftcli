@@ -74,3 +74,11 @@ EXAMPLE
 
 _See code: [src/commands/release-stage.ts](https://github.com/Wilson13/ftctl/blob/v1.0.7/src/commands/release-stage.ts)_
 <!-- commandsstop -->
+
+NOTES
+
+To publish new version, follow these steps:
+
+1. Perform git add, commit, and push.
+2. Run `npm version <version>`
+3. Run `npm publish`
