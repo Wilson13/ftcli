@@ -1,7 +1,6 @@
-ftctl
-=====
+# ftctl
 
-CLI tool for minimal automation of Drone CD flow using Helm Chart type deployment.
+CLI tool for minimal automation of Drone CI flow using Helm Chart type deployment.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/ftctl.svg)](https://npmjs.org/package/ftctl)
@@ -9,11 +8,15 @@ CLI tool for minimal automation of Drone CD flow using Helm Chart type deploymen
 [![License](https://img.shields.io/npm/l/ftctl.svg)](https://github.com/wilson_13/ftctl/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
+
+- [Usage](#usage)
+- [Commands](#commands)
+  <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g ftctl
 $ ftctl COMMAND
@@ -25,11 +28,15 @@ USAGE
   $ ftctl COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`ftctl help [COMMAND]`](#ftctl-help-command)
-* [`ftctl release-stage [STRING]`](#ftctl-release-stage-string)
+
+- [`ftctl help [COMMAND]`](#ftctl-help-command)
+- [`ftctl release-stage [STRING]`](#ftctl-release-stage-string)
 
 ## `ftctl help [COMMAND]`
 
@@ -50,7 +57,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3
 
 ## `ftctl release-stage [STRING]`
 
-This command updates helm chart values.yaml (image.tag) and Chart.yaml (appVersion) to be the version provided as argument. 
+This command updates helm chart values.yaml (image.tag) and Chart.yaml (appVersion) to be the version provided as argument.
 
 ```
 USAGE
@@ -62,9 +69,9 @@ OPTIONS
   -v, --version=version  version to build and release
 
 DESCRIPTION
-  This command updates helm chart values.yaml (image.tag) and Chart.yaml (appVersion) to be the version provided as 
-  argument. 
-  After updating these values, it also performs upload the new chart and execute git tag and push tag. Note: Chart 
+  This command updates helm chart values.yaml (image.tag) and Chart.yaml (appVersion) to be the version provided as
+  argument.
+  After updating these values, it also performs upload the new chart and execute git tag and push tag. Note: Chart
   version should be updated manually.
 
 EXAMPLE
@@ -73,6 +80,7 @@ EXAMPLE
 ```
 
 _See code: [src/commands/release-stage.ts](https://github.com/Wilson13/ftctl/blob/v1.0.7/src/commands/release-stage.ts)_
+
 <!-- commandsstop -->
 
 NOTES
