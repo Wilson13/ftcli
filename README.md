@@ -69,7 +69,7 @@ OPTIONS
   -v, --version=version  version to build and release
 
 DESCRIPTION
-  This command updates helm chart values.yaml (image.tag) and Chart.yaml (appVersion) to be the version provided as
+  This command updates .drone.yaml, helm chart values.yaml (image.tag) and Chart.yaml (appVersion) to be the version provided as
   argument.
   After updating these values, it also performs upload the new chart and execute git tag and push tag. Note: Chart
   version should be updated manually.
