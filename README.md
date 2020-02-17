@@ -8,14 +8,16 @@ CLI tool for minimal automation of Drone CI flow using Helm Chart type deploymen
 [![License](https://img.shields.io/npm/l/ftctl.svg)](https://github.com/wilson_13/ftctl/blob/master/package.json)
 
 <!-- toc -->
-* [ftctl](#ftctl)
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
+
+- [ftctl](#ftctl)
+- [Usage](#usage)
+- [Commands](#commands)
+  <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g ftctl
 $ ftctl COMMAND
@@ -27,13 +29,15 @@ USAGE
   $ ftctl COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`ftctl help [COMMAND]`](#ftctl-help-command)
-* [`ftctl release-stage [STRING]`](#ftctl-release-stage-string)
+
+- [`ftctl help [COMMAND]`](#ftctl-help-command)
+- [`ftctl release-stage [STRING]`](#ftctl-release-stage-string)
 
 ## `ftctl help [COMMAND]`
 
@@ -68,7 +72,7 @@ OPTIONS
   -v, --version=version  version to build and release
 
 DESCRIPTION
-  This command updates .drone.yaml docker tag value, helm chart values.yaml (image.tag) and Chart.yaml (appVersion) to 
+  This command updates .drone.yaml docker tag value, helm chart values.yaml (image.tag) and Chart.yaml (appVersion) to
   be the version provided as argument.
      Note: Chart version should be updated manually.
 
@@ -78,6 +82,7 @@ EXAMPLE
 ```
 
 _See code: [src/commands/release-stage.ts](https://github.com/Wilson13/ftctl/blob/v1.0.9/src/commands/release-stage.ts)_
+
 <!-- commandsstop -->
 
 NOTES
@@ -87,3 +92,7 @@ To publish new version, follow these steps:
 1. Perform git add, commit, and push.
 2. Run `npm version <version>`
 3. Run `npm publish`
+
+To update installed ftctl version, run:
+
+    npm update -g ftctl

@@ -24,7 +24,7 @@ export default class Release extends Command {
   Note: Chart version should be updated manually.`;
 
   static examples = [
-    `$ ftctl release-stage -v 0.1.0-beta.1 -p <path-to-chart> -f <values.yaml filename> -d ."
+    `$ ftctl release -v 0.1.0-beta.1 -p <path-to-chart> -f <values.yaml filename> -d ."
 App versioned '0.1.0-beta.1' build and releasing to staging initiated.
 `
   ];
