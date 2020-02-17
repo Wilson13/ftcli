@@ -1,7 +1,7 @@
 {
   "name": "ftctl",
   "description": "CLI tool for minimal automation of Drone CD flow using Helm Chart type deployment.",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": "Wilson13",
   "bin": {
     "ftctl": "./bin/run"
