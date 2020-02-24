@@ -116,8 +116,16 @@ App versioned '0.1.0-beta.1' build and releasing to staging initiated.
     fs.readFile(dronePath, function(err, data) {
       if (err) throw err;
       let fileData = data.toString();
-      const regex = /-\s+echo\s-n\s.+\s>\s\.tags/i;
-      fileData = fileData.replace(regex, `- echo -n "${version}" > .tags`);
+      // const regex = /-\s+echo\s-n\s.+\s>\s\.tags/i;
+      const regex = /-\s+echo\s.+\s>>\s\.tags/i;
+      fileData = fileData.replace(
+        regex,
+        '- echo -n "'.concat(
+          version,
+          // eslint-disable-next-line no-template-curly-in-string
+          ', ${DRONE_BRANCH}, ${DRONE_BRANCH}-${DRONE_COMMIT}" >> .tags'
+        )
+      );
       fs.writeFile(dronePath, fileData, function(err) {
         // eslint-disable-next-line no-console
         if (err) console.log(err);
